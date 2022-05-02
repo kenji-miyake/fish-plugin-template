@@ -9,7 +9,7 @@
 ### Using fisher (recommended)
 
 ```sh
-fisher add kenji-miyake/PLUGIN_NAME.fish
+fisher install kenji-miyake/PLUGIN_NAME.fish
 ```
 
 ### Using local-install script (for development)
