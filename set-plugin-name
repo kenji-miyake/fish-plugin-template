@@ -8,5 +8,6 @@ if [ "$plugin_name" = "" ]
     exit 1
 end
 
-sd "PLUGIN_NAME" "$plugin_name" (fd -e .fish -e .md)
-rename -s "PLUGIN_NAME" "$plugin_name" (fd -e .fish -e .md)
+sd PLUGIN_NAME "$plugin_name" (fd -e .fish -e .md)
+rnr -f --no-dump PLUGIN_NAME "$plugin_name" (fd -e .fish -e .md)
+rm ./set-plugin-name
